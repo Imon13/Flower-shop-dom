@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  
+    <header>
+    
+
+    </header>
+    <main>
+        <!--  conatiner -->
+          <div class="flex flex-col lg:flex-row mt-10">
+            <!-- shape conatiner -->
+             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- triangle card -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/pngwing 10.png"
+                        alt="triangle" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Snow white</h2>
+                      
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quia.</p>
+                      
+                    <p>Price <span>40</span>$</p>
+                     
+                      <div class="card-actions">
+                        <button id="btn-calculator" class="btn btn-primary  w-full">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ractangle card -->
+                  <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/pngwing 6.png"
+                        alt="rectangle" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Red Rose</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quia.</p>
+                      
+                    <p>Price <span>30</span>$</p>
+                     
+                      <div class="card-actions">
+                        <button id="btn-calculator-ractangle" class="btn btn-primary  w-full">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Paralellogram card -->
+                  <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/pngwing 8.png"
+                        alt="rectangle" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Rose</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quia.</p>
+                      
+                    <p>Price <span>50</span>$</p>
+                     
+                      <div class="card-actions">
+                        <button id="" class="btn btn-primary  w-full">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>>
+
+             </div>
+             <!-- Area calculator -->
+              <div class="w-[400px]">
+                <div class="text-3xl text-center">
+                  <h4>Code: Hero</h4>
+                  <h6>total: <span id="total">00</span></h6>
+                  <h6>discount:<span>00</span></h6>
+                  <hr />
+                  <h5>grand Total: <span>00</span></h5>
+                  <div class="coupon"></div>
+                </div>
+              </div>
+          </div>
+    </main>
+    <script src="scripts/area-calculator.js"></script>
+</body>
+</html>
