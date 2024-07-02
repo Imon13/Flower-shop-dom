@@ -15,79 +15,66 @@
     </header>
     <main>
         <!--  conatiner -->
-          <div class="flex flex-col lg:flex-row mt-10">
-            <!-- shape conatiner -->
-             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- triangle card -->
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img
-                        src="images/pngwing 10.png"
-                        alt="triangle" />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Snow white</h2>
-                      
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quia.</p>
-                      
-                    <p>Price <span>40</span>$</p>
-                     
-                      <div class="card-actions">
-                        <button id="btn-calculator" class="btn btn-primary  w-full">Add to cart</button>
-                      </div>
-                    </div>
+        <section>
+          <h1 class="text-center m-5">ALl Flower cards</h1>
+    
+          <div class="card-container row">
+            <div class="left-side-container col-8 grid grid-cols-3">
+              <div class="cards-container d-flex justify-content-around flex-wrap">
+                <div class="box">
+                  <img class="box-img" src="./images/Rectangle 4.png" alt="" />
+                  <div class="box-info p-2">
+                    <h5>Snow white</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <h6>price: <span id="snow-rose-price">50</span> $</h6>
+                    <button onclick="handleCLikBtn(this)" class="btn box-btn">
+                      ADD TO CART
+                    </button>
                   </div>
-                  <!-- ractangle card -->
-                  <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img
-                        src="images/pngwing 6.png"
-                        alt="rectangle" />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Red Rose</h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quia.</p>
-                      
-                    <p>Price <span>30</span>$</p>
-                     
-                      <div class="card-actions">
-                        <button id="btn-calculator-ractangle" class="btn btn-primary  w-full">Add to cart</button>
-                      </div>
-                    </div>
+                </div>
+                <div class="box">
+                  <img class="box-img" src="./images/pngwing 10.png" alt="" />
+                  <div class="box-info p-3">
+                    <h5>balck white</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <h6>price: <span id="black-rose-price">10</span> $</h6>
+                    <button onclick="handleCLikBtn(this)" class="btn box-btn">
+                      ADD TO CART
+                    </button>
                   </div>
-                  <!-- Paralellogram card -->
-                  <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img
-                        src="images/pngwing 8.png"
-                        alt="rectangle" />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Rose</h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quia.</p>
-                      
-                    <p>Price <span>50</span>$</p>
-                     
-                      <div class="card-actions">
-                        <button id="" class="btn btn-primary  w-full">Add to cart</button>
-                      </div>
-                    </div>
-                  </div>>
-
-             </div>
-             <!-- Area calculator -->
-              <div class="w-[400px]">
-                <div class="text-3xl text-center">
-                  <h4>Code: Hero</h4>
-                  <h6>total: <span id="total">00</span></h6>
-                  <h6>discount:<span>00</span></h6>
-                  <hr />
-                  <h5>grand Total: <span>00</span></h5>
-                  <div class="coupon"></div>
+                </div>
+                <div class="box">
+                  <img class="box-img" src="./images/pngwing 7.png" alt="" />
+                  <div class="box-info p-3">
+                    <h5>blue rose</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <h6>price: <Span id="blue-rose-price">300</Span> $</h6>
+                    <button onclick="handleCLikBtn(this)" class="btn box-btn">
+                      ADD TO CART
+                    </button>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="right-side-container col-4 text-center">
+              <h4>Code: Hero</h4>
+    
+              <div class="selected-items" id="selected-items">
+
+              </div>
+              <div class="cart-box">
+                <h6>total: <span id="total">00</span>$</h6>
+                <h6>discount:<span>00</span></h6>
+                <hr />
+                <h5>grand Total: <span>00</span></h5>
+              </div>
+    
+              <div class="coupon"></div>
+            </div>
           </div>
+        </section>
     </main>
-    <script src="scripts/area-calculator.js"></script>
+    <script src="js/scripts.js"></script>
+    
 </body>
 </html>
